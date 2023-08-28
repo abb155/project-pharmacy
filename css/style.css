@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --mainBlue:#40ACF1;
+    --transparentBlue:rgba(64, 172, 241,0.7);
+    --mainWhite:#FFFFFF;
+    --mainBlack:#292F36;
+    --mainGrey:rgb(216, 214, 214);
+    --mainYellow:#e3b505;
+  }
+  
+
+
+body{
+    font-family:'vazir','yekan';
+    color: #2C3E50;
+    background-color: #fff;
+}
+.pharmacy-link{
+    color: #B0BEC5;
+    font-size: 1rem;
+    font-weight: 700;
+transition: all 1s ease-in-out;
+}
+.pharmacy-link:hover{
+    color: #7E57C2;
+}
+
+.nav-icon{
+    font-size: 1.5rem;
+    color: #2C3E50;
+}
+.nav-icon:hover{
+    color: #304FFE;
+}
+
+.header{
+    color: #009688;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0,100% 95%,50% 100%,0 95%);
+
+}
+.height-max{
+    height: 50vw;
+    background-image: url('../image/header.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    animation-name: zoom;
+    animation-duration: 20s;
+    animation-delay: 2s;
+    animation-timing-function: inherit;
+}
+@keyframes zoom{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2) translateX(-5%);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.header-info{
+margin: 27vw 0;
+padding:0 7vw;
+ font-family:'vazir','yekan';
+ cursor: pointer;
+
+}
+@media screen and(min-wdith:768px){
+    .header-info{
+        font-size: 0.3rem;
+    }
+}
+.header-info h2{
+    font-size: 2rem;
+    margin-left: 5vw;
+    background:rgba( green, blue,0,0,0,0.4);
+    border-left: 0.3rem solid #009688;
+ 
+}
+.header-info h3{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.section-title-special{
+    background:#009688 ;
+    color: #ffffff;
+    padding: 1rem 1.5rem;
+    clip-path: polygon(10% 0,100% 0,90% 100%,0 100%);
+    text-align: center;
+}
+.skill-icon{
+    font-size: 3rem;
+    color: #64B5F6;
+    background-color: #304FFE;
+    padding: 0.70rem 1.3rem;
+}
+.skill-icon:hover{
+    color: #64B5F6;
+}
+.skills-underline{
+    width: 4rem;
+    height: 0.3rem;
+    background-color: #009688;
+    margin: 1rem auto;
+}
+.inventory{
+    background-color: #BDC3C7;
+  
+}
+.pharmacy-card{
+    border-radius: 0 !important;
+}
+
+.pharmacy-img{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.pharmacy-value {
+    background:#009688 ;
+    color: #fff;
+    clip-path: polygon(15% 0,85% 0,100% 100%,0 100%);
+    transition: all 1s linear;
+}
+.pharmacy-value:hover{
+    clip-path: polygon(0% 0,100% 0,100% 100%,0 100%);
+}
+.question{
+    background-image: url('../image/7.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.question-gray{
+    background: rgba(79, 109, 122, 0.75);
+}
+.question-yellow{
+    background: rgba(277, 181, 5, 0.75);
+}
+.question-icon{
+    font-size: 3.5vw;
+    transition: all 1s ease-in-out;
+}
+.question-icon:hover{
+    transform: translateY(-10%);
+}
+.question-title{
+    color: #34495E;
+}
+.question-info{
+    color: #fff;
+}
+.featured{
+    background-color: #BDC3C7;
+}
+.featured-item{
+    background: #ffffff;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    opacity: 0.5;
+    transition: all 1s ease-in-out;
+  }
+  .featured-item:hover{
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  .featured-icon{
+    color: #F39C12;
+    margin-left: 1vw;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+  }
+  .featured-icon:hover{
+    color: #F39C12;
+  }
+  .img-container{
+    background:#3498DB;
+    position: relative;
+    overflow: hidden;
+  }
+  .featured-photo{
+    transition: all 1s ease-in-out;
+    }
+ .img-container:hover .featured-photo{
+    transform: scale(1.3);
+    opacity: 0.5;
+ }
+.featured-link{
+ position: absolute;
+  top: 50%;
+ left: 50%;
+ font-size: 3rem;
+ transform: translate(-50% -50%);
+ color: #2C3E50;
+ opacity: 0;
+ transition: all 1s ease-in-out;
+}
+.featured-link:hover{
+    color: #fff;
+}
+.img-container:hover .featured-link{
+opacity: 1;
+}
+.gallery-item{
+    background:yellow;
+    position: relative;
+    cursor: pointer;
+  }
+  .gallery-img{
+    transition: all 1s ease-in-out;
+  }
+  .gallery-item:hover .gallery-img{
+    opacity: 0.5;
+  }
+  .gallery-item::after{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    outline: 0.5rem solid #fff;
+    outline-offset: -2rem;
+    transition: all 1s ease-in-out;
+    transform: scale(0);
+  }
+  .gallery-item:hover:after{
+    transform: scale(1);
+  }
+  .contact{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('../image/header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .contact-input{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    background: transparent;
+    color: #F1C40F;
+    border-color:#F1C40F;
+    text-align: left;
+  }
+  .contact-input::placeholder{
+    color: #F1C40F;
+  }
+  .contact-input:focus{
+  background: transparent;
+  border-color: #F1C40F;
+  }
+  .contact-btn{
+    text-transform: uppercase;
+    color: #F1C40F;
+    border-color: #F1C40F;
+  }
+  .contact-btn:hover{
+  background: #F1C40F;
+    border-color: #2C3E50;
+  }
+  .services{
+    clip-path: polygon(0 10%,100% 0,100% 90%,0 100%);
+    position: relative;
+  min-width: 95vw;
+  padding-right: 2rem;
+    margin: 0 auto;
+  }
+  .video-cotainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+   
+  }
+  .video-item{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+  }
+  .video-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--transparentBlue);
+    z-index: -2;
+   
+  }
+  .service{
+    background: var(--mainBlack);
+    color: var(--mainWhite);
+    transition: all 1s ease-in-out;
+  }
+  .service:hover{
+    background: var(--mainWhite);
+    color: var(--mainBlack) !important;
+    padding-left: 2.2rem !important;
+  }
+  .service-icon{
+    font-size: 4rem;
+    color: var(--mainYellow);
+  }
+  .footer{
+   background-color: #292F36;
+  }
+  .footer-icon{
+    color: var(--mainYellow);
+    font-size: 1.5rem;
+    transition: all 1s ease-in-out;
+    text-decoration: none;
+  }
+  .footer-icon:hover{
+    color: var(--mainBlue);
+  }
+  
